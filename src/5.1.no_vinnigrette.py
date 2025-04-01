@@ -7,6 +7,12 @@ Created on Wed Mar 26 22:15:13 2025
 import random
 from datetime import datetime, timedelta
 def no_vinnigrete(d1,d2):
+    """
+    thos function gets two dates as arguments generates randomly date between them
+    and if the random date is monday the function print no vinigrate
+    then return the random date
+
+    """
     d1 = datetime.strptime(d1, "%Y-%m-%d")
     d2 = datetime.strptime(d2, "%Y-%m-%d")
     if d1 > d2:
@@ -15,8 +21,6 @@ def no_vinnigrete(d1,d2):
     random_days = random.randint(0, delta_days)
     random_date = d1 + timedelta(days=random_days)
     day_of_week = random_date.strftime("%A")
-    #print (day_of_week)
     if day_of_week == "Monday":
         print("Ain't gettin' no vinaigrette today :(")
     return random_date
-
