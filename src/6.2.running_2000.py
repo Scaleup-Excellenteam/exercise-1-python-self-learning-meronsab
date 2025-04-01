@@ -6,11 +6,9 @@ Created on Thu Mar 27 02:02:23 2025
 """
 
 import time
-
-def running_2000(func,*parameters):
-    start_time = time.time()  
-    func(*parameters)
+def running_2000(func, *args, **kwargs):
+    start_time = time.time()
+    func(*args, **kwargs)
     end_time = time.time()  
     execution_time = end_time - start_time
-    print(f"Time taken: {execution_time} seconds")
-    
+    return execution_time

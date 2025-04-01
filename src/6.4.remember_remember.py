@@ -16,7 +16,9 @@ def remember_remember(image_path):
                 message.append(chr(j))
                 break  # עובר לעמודה הבאה
 
-    return "".join(message)
+    ret =  "".join(message)
+    print(ret)
+    return ret
 
 
 

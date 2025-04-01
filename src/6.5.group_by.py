@@ -12,7 +12,3 @@ def group_by(func,lst):
     for i in lst:
         ret[func(i)].append(i)
     return ret
-    
-
-
-print(group_by(len, ["hi", "bye", "yo", "try"]))
