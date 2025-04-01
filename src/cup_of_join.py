@@ -12,4 +12,4 @@ def cup_of_join(*lists, sep = "-"):
         ret.append(sep)
     ret.pop()
     return ret
-print(join([1,2],[5],[1,3,6],sep = '|'))
+#print(join([1,2],[5],[1,3,6],sep = '|'))

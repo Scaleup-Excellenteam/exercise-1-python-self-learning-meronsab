@@ -5,7 +5,7 @@ Created on Thu Mar 27 01:37:06 2025
 @author: meron
 """
 
-def interleave(*itera):
+def communicating_vessels(*itera):
     ret = []
     bigest = 0
     for ite in itera:
@@ -17,5 +17,5 @@ def interleave(*itera):
                 ret.append(ite[i])
     return ret
 
-print(interleave('abc', [1, 2, 3], ('!', '@', '#')))
+#print(interleave('abc', [1, 2, 3], ('!', '@', '#')))
 #['a', 1, '!', 'b', 2, '@', 'c', 3, '#']       

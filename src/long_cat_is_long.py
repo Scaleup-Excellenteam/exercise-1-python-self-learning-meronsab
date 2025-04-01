@@ -29,4 +29,4 @@ expected_result = {'you': 3, 'see': 3, 'wire': 4, 'telegraph': 9, 'is': 2, 'a': 
                    , 'the': 3, 'same': 4, 'way': 3, 'send': 4, 'signals': 7, 'here': 4,
                    'they': 4, 'receive': 7, 'them': 4, 'there': 5, 'only':
                        4, 'difference': 10, 'that': 4, 'no': 2}
-print(long_cat_is_long(text))
+#print(long_cat_is_long(text))
